@@ -21,7 +21,8 @@ require_once 'products.php';
         <h1> Ürünler</h1> <small class="badge badge-success"> Sepetinizde <?php echo count($_COOKIE['sepet'])?> ürün var..</small> <a href="sepet.php">Sepete Git</a>
         <hr>
         <div class="row">
-          <?php foreach ($kurslar as $key) {?>
+          <?php
+           foreach ($kurslar as $key) {?>
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
                 <img src="<?php echo $key['resim'] ?>" class="card-img-top" alt="...">
